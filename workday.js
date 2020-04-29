@@ -1,3 +1,15 @@
+
+console.log("why?");
+
+var date = "2020-04-03" 
+var format = "LLLL";
+var result = moment(date).format(format);
+
+$("#currentDay").text(result); 
+// $("#currentDay").attr("style", "color:pink;");
+// $(".workNow").html("<h1>Hello friends!</h1>");
+
+
 let myVar = [
     {
         time: "0900",
@@ -38,7 +50,7 @@ let myVar = [
     for(let i = 0; i < myVar.length; i++)
     {
         let head = myVar[i].time;
-        //console.log(myVar[i].time);
+        // console.log(myVar[i].time);
         let newTime = $("<row>");
         newTime.attr("id", myVar[i].time);
         newTime.addClass("row");
