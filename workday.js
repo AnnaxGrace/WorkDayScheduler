@@ -1,9 +1,11 @@
 
 console.log("why?");
 
-var date = "2020-04-03" 
-var format = "LLLL";
-var result = moment(date).format(format);
+var d = new Date();
+var format = "LL";
+nowDate = d.toLocaleDateString()
+console.log(d.toLocaleDateString())
+var result = moment(nowDate).format(format);
 
 $("#currentDay").text(result); 
 // $("#currentDay").attr("style", "color:pink;");
