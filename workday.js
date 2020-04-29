@@ -3,13 +3,27 @@ console.log("why?");
 
 var d = new Date();
 var format = "LL";
+console.log(d);
 nowDate = d.toLocaleDateString()
-console.log(d.toLocaleDateString())
+// console.log(d.toLocaleDateString())
+// console.log(d.toLocaleTimeString())
+// console.log(d.toLocaleTimeString());
 var result = moment(nowDate).format(format);
-
+var hourString = moment(d).format("h");
+console.log(nowDate);
+console.log(hourString);
+// //make a var that has the text of localtime string and try to grab the hour
 $("#currentDay").text(result); 
-// $("#currentDay").attr("style", "color:pink;");
-// $(".workNow").html("<h1>Hello friends!</h1>");
+
+hourNumber = parseFloat(hourString);
+console.log(hourNumber)
+
+// var smile = (d.toLocaleTimeString())
+// var laugh = smile.toCharArray();
+// // var smile = laugh.charAt(0);
+// //IT'S AN OBJECT
+// console.log(laugh);
+// // $("#currentDay").text(result); 
 
 
 let myVar = [
