@@ -77,7 +77,16 @@ function renderLastRegistered() {
     var Form5 = localStorage.getItem("Form5");
 
     $("#form9").attr("placeholder", Form9);
-    $("form9").attr("style", "color:black;");
+    $("#form10").attr("placeholder", Form10);
+    $("#form11").attr("placeholder", Form11);
+    $("#form12").attr("placeholder", Form12);
+    $("#form1").attr("placeholder", Form1);
+    $("#form2").attr("placeholder", Form2);
+    $("#form3").attr("placeholder", Form3);
+    $("#form4").attr("placeholder", Form4);
+    $("#form5").attr("placeholder", Form5);
+    
+    
     console.log(Form9);
   
   
