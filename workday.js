@@ -1,5 +1,8 @@
 var time9 = $("#time9");
 time9.value = 9;
+// var Form9 = $("#form9").value;
+// console.log(Form9)
+
 
 var time10 = $("#time10");
 time10.value = 10;
@@ -25,39 +28,29 @@ time4.value = 16;
 var time5 = $("#time5");
 time5.value = 17;
 
-
-
-
-
-
 var d = new Date();
 var format = "LL";
 console.log(d);
 nowDate = d.toLocaleDateString()
 var result = moment(nowDate).format(format);
-var hourString = moment(d).format("H");
-console.log(hourString)
 
+var hourString = moment(d).format("H");
+hourNumber = parseFloat(hourString);
 
 $("#currentDay").text(result); 
-
-hourNumber = parseFloat(hourString);
-console.log(hourNumber)
 
 //idGrab is time variable
 function timeColor(idGrab) {
   
-console.log("this is id Grab " + idGrab.value)
-console.log("this is hourNumber " + hourNumber)
-if (idGrab.value > hourNumber) {
-    idGrab.addClass("class future");
-}
-else if (idGrab.value === hourNumber) {
-     idGrab.addClass("class present");
-}
-else if (idGrab.value < hourNumber) {
-    idGrab.addClass("class past");
-}
+    if (idGrab.value > hourNumber) {
+        idGrab.addClass("class future");
+    }
+    else if (idGrab.value === hourNumber) {
+        idGrab.addClass("class present");
+    }
+    else if (idGrab.value < hourNumber) {
+        idGrab.addClass("class past");
+    }
 }
 
 timeColor(time9);
@@ -70,26 +63,22 @@ timeColor(time3);
 timeColor(time4);
 timeColor(time5);
 
+$(".btn9").on("click", function(event) {
+    event.preventDefault();
 
-// function numberBackground (timeNumber)
-// var time10 = $("#time10")
+    var Form9 = document.querySelector("#form9").value;
+    console.log(Form9);
 
-// console.log(number10)
-// var textValue = document.querySelector("#timeNow");
-// var help = textValue.value
-// console.log(help);
- 
-//  console.log(textValue);
+    if (Form9 === "") {
+        console.log("no text");
+    }
+    else {
+    localStorage.setItem("Form9", Form9);
+    
+    console.log("why");
+    }
 
-// if (number9 < hourNumber) {
-//     $("#help").addClass("class past");
-//  }
-
-//  if (number10 < hourNumber) {
-//     $("#help").addClass("class past");
-//  }
-
-
+});
 
 
 // let myVar = [
