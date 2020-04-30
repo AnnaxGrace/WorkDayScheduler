@@ -63,19 +63,152 @@ timeColor(time3);
 timeColor(time4);
 timeColor(time5);
 
+renderLastRegistered();
+
+function renderLastRegistered() {
+    var Form9 = localStorage.getItem("Form9");
+    var Form10 = localStorage.getItem("Form10");
+    var Form11 = localStorage.getItem("Form11");
+    var Form12 = localStorage.getItem("Form12");
+    var Form1 = localStorage.getItem("Form1");
+    var Form2 = localStorage.getItem("Form2");
+    var Form3 = localStorage.getItem("Form3");
+    var Form4 = localStorage.getItem("Form4");
+    var Form5 = localStorage.getItem("Form5");
+
+    $("#form9").attr("placeholder", Form9);
+    $("form9").attr("style", "color:black;");
+    console.log(Form9);
+  
+  
+  }
+
 $(".btn9").on("click", function(event) {
     event.preventDefault();
 
     var Form9 = document.querySelector("#form9").value;
-    console.log(Form9);
-
     if (Form9 === "") {
         console.log("no text");
     }
     else {
     localStorage.setItem("Form9", Form9);
-    
-    console.log("why");
+    }
+
+});
+
+$(".btn9").on("click", function(event) {
+    event.preventDefault();
+
+    var Form9 = document.querySelector("#form9").value;
+    if (Form9 === "") {
+        console.log("no text");
+    }
+    else {
+    localStorage.setItem("Form9", Form9);
+    }
+
+});
+
+$(".btn10").on("click", function(event) {
+    event.preventDefault();
+
+    var Form10 = document.querySelector("#form10").value;
+    if (Form10 === "") {
+        console.log("no text");
+    }
+    else {
+    localStorage.setItem("Form10", Form10);
+    }
+
+});
+
+$(".btn11").on("click", function(event) {
+    event.preventDefault();
+
+    var Form11 = document.querySelector("#form11").value;
+    if (Form11 === "") {
+        console.log("no text");
+    }
+    else {
+    localStorage.setItem("Form11", Form11);
+    }
+
+});
+
+$(".btn12").on("click", function(event) {
+    event.preventDefault();
+
+    var Form12 = document.querySelector("#form12").value;
+    if (Form12 === "") {
+        console.log("no text");
+    }
+    else {
+    localStorage.setItem("Form12", Form12);
+    }
+
+});
+
+$(".btn1").on("click", function(event) {
+    event.preventDefault();
+
+    var Form1 = document.querySelector("#form1").value;
+    if (Form1 === "") {
+        console.log("no text");
+    }
+    else {
+    localStorage.setItem("Form1", Form1);
+    }
+
+});
+
+$(".btn2").on("click", function(event) {
+    event.preventDefault();
+
+    var Form2 = document.querySelector("#form2").value;
+    if (Form2 === "") {
+        console.log("no text");
+    }
+    else {
+    localStorage.setItem("Form2", Form2);
+    }
+
+});
+
+$(".btn3").on("click", function(event) {
+    event.preventDefault();
+
+    var Form3 = document.querySelector("#form3").value;
+    if (Form3 === "") {
+        console.log("no text");
+    }
+    else {
+    localStorage.setItem("Form3", Form3);
+    }
+
+});
+
+$(".btn4").on("click", function(event) {
+    event.preventDefault();
+
+    var Form4 = document.querySelector("#form4").value;
+    if (Form4 === "") {
+        console.log("no text");
+    }
+    else {
+    localStorage.setItem("Form4", Form4);
+    }
+
+});
+
+$(".btn5").on("click", function(event) {
+    event.preventDefault();
+
+    var Form5= document.querySelector("#form5").value;
+    if (Form5 === "") {
+        console.log("no text");
+    }
+    else {
+    localStorage.setItem("Form5", Form5);
     }
 
 });

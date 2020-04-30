@@ -69,4 +69,24 @@ body {
     font-size: 20px;
     transition: all .3s ease-in-out;
   }
+
+  .bckNo {
+  background-color: transparent;
+  height:50px;
+  width: 100%;
+  margin: 0px !important;
+  padding: 0px !important;
+  /* margin-bottom: 0px; */
+
+  }
+
+  #time9 {
+      padding: 0px !important;
+      margin: 0px !important;
+  }
+
+  .STOPIT {
+    padding: 0px !important;
+    margin: 0px !important;
+}
   
