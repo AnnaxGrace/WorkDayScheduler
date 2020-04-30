@@ -1,12 +1,42 @@
+var time9 = $("#time9");
+time9.value = 9;
 
-console.log("why?");
+var time10 = $("#time10");
+time10.value = 10;
+
+var time11 = $("#time11");
+time11.value = 11;
+
+var time12 = $("#time12");
+time12.value = 12;
+
+var time1 = $("#time1");
+time1.value = 13;
+
+var time2 = $("#time2");
+time2.value = 14;
+
+var time3 = $("#time3");
+time3.value = 15;
+
+var time4 = $("#time4");
+time4.value = 16;
+
+var time5 = $("#time5");
+time5.value = 17;
+
+
+
+
+
 
 var d = new Date();
 var format = "LL";
 console.log(d);
 nowDate = d.toLocaleDateString()
 var result = moment(nowDate).format(format);
-var hourString = moment(d).format("h");
+var hourString = moment(d).format("H");
+console.log(hourString)
 
 
 $("#currentDay").text(result); 
@@ -14,23 +44,52 @@ $("#currentDay").text(result);
 hourNumber = parseFloat(hourString);
 console.log(hourNumber)
 
-var time10 = $("time10")
-time10.value = "true"
-if (time10.value === "true"){
-    var number10 = -2;
+//idGrab is time variable
+function timeColor(idGrab) {
+  
+console.log("this is id Grab " + idGrab.value)
+console.log("this is hourNumber " + hourNumber)
+if (idGrab.value > hourNumber) {
+    idGrab.addClass("class future");
+}
+else if (idGrab.value === hourNumber) {
+     idGrab.addClass("class present");
+}
+else if (idGrab.value < hourNumber) {
+    idGrab.addClass("class past");
+}
 }
 
-console.log(number10)
+timeColor(time9);
+timeColor(time10);
+timeColor(time11);
+timeColor(time12);
+timeColor(time1);
+timeColor(time2);
+timeColor(time3);
+timeColor(time4);
+timeColor(time5);
+
+
+// function numberBackground (timeNumber)
+// var time10 = $("#time10")
+
+// console.log(number10)
 // var textValue = document.querySelector("#timeNow");
 // var help = textValue.value
 // console.log(help);
  
 //  console.log(textValue);
 
- if (number10 < hourNumber) {
-    console.log("yes");
-    $("#help").addClass("class past");
- }
+// if (number9 < hourNumber) {
+//     $("#help").addClass("class past");
+//  }
+
+//  if (number10 < hourNumber) {
+//     $("#help").addClass("class past");
+//  }
+
+
 
 
 // let myVar = [
