@@ -18,15 +18,18 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="workday.css" />
+    <link rel="stylesheet" href="assets/workday.css" />
+    <link rel="shortcut icon" type="image/png" href="assets/SchedulerFavicon.png">
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
     <header class="jumbotron">
+    <div class = "surround">
       <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <h3 class=>A calendar app for scheduling your work day</h3>
       <p id="currentDay" class="lead workNow"></p>
+      </div>
     </header>
 
     <div class="container">
@@ -38,13 +41,6 @@
 ​
     <table class="table">
         
-        <thead>
-            <tr>
-                <th scope="col-4">TIME</th>
-                <th scope="col-4">ACTIVITY</th>
-                <th scope="col-4">BUTTON</th>
-            </tr>
-        </thead>
         
         <tbody>
             <tr>
@@ -131,12 +127,10 @@
         </tbody>
     </table>
 ​
-    <!-- <script src = "lib/moment/moment.min.js"></script> -->
-    <!-- <script src = "./workday.js"></script> -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src = "lib/moment/moment.min.js"></script>
-    <script src = "./workday.js"></script>
+    <script src = "assets/moment/moment.min.js"></script>
+    <script src = "assets/workday.js"></script>
   </body>
 </html>
