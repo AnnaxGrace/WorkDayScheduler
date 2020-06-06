@@ -15,7 +15,6 @@ body {
   
   .jumbotron {
     text-align: center;
-    /* background-color: transparent; */
     background-image: url("flower-header2.jpg");
     color: black;
     font-weight: 200px;
