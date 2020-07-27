@@ -1,38 +1,62 @@
-# WorkDayScheduler
 
 
-Pseudo-Code: 
 
-The html must take the users time and date from the computer. 
 
-If the time has passed, the background is gray, if the time is now, the background is red, if the time is later it is green. So the background must be responsive to the time.
+[![made-with-VSCode](https://img.shields.io/badge/Made%20with-VSCode-1f425f.svg)](https://code.visualstudio.com/)
+# Work Day Scheduler
 
-If you put an event down, if you click the save button it needs to save it to local storage. If you refresh and put a new event down, should it replace or add to the event? I think add, I think you should backspace out any event you don't want.
+<img src="assets/SchedulerImage.png"
+     alt="Log-in Page"
+     style="margin-right: 10px; height: 300px;" />
 
-Real Code:
 
-In HTMl:
+## Description
+A work day calendar for adding, deleting, and editing events.
 
-I added the form elements and the form inputs. I also added multiple ids and classes for css and javascript.
+## Table of Contents
 
-In JS:
+* [License](#license)
+* [Pitch](#pitch)
+* [Contributing](#contributing)
+* [Links](#Links)
+* [Tenchnologies](#Technologies)
+* [Developer](#Developer)
 
-Used selectors added to the activities columns to add numerical values. Later used this against the real local time variable to determine background color.
 
-Made value that took the real time and date, and then used moment formatting to create variable result with desired format.
+## License
+MIT
 
-Created variable hourString to hold the number of the hour in military time in a string. Then created variable hourNumber with parse to make the string a usable number.
+## Contributing
+No contributors allowed.
 
-Displayed the current date in the jumbotron
+## Links
+* GitHub repository URL: https://github.com/annaxgrace/WorkDayScheduler
+* GitHub Pages deployed URL: https://annaxgrace.github.io/WorkDayScheduler/
 
-Created function timeColor, which holds the value number that I created of each of the rows in the activity column against the hour in military time. I made the values correspond to the time in military time. For example, if it is 1:00 formNumber is 13. Added pre-defined class of background colors depending if the number was less than, more than, or equal to the real time.
+## Technologies
 
-Ran that function for each of the sections.
+### Languages 
+* HTML, CSS, JavaScript
 
-Ran function renderLastRegistered, which gets from the local storage the value put in previously, and puts them in the form.
+### FrameWorks
+* Bootstrap, Express
 
-Created a click event for each save button that first checks to see if the value is empty. If it is, nothing happens. If it has a value, it puts that value into local storage.
+### Libraries
+* Moment.js
 
-In CSS:
 
-I created two classes in css that stylized the forms.
+## Developer
+
+### Anna Conover
+
+* Github username: annaxgrace
+* Email: anna.grace.conover@gmail.com
+* Deployed Project URL: annaxgrace.github.io/Portfolio
+
+<img src="https://avatars2.githubusercontent.com/u/61895571?s=460&u=51c1a5027c2ee815104a12b2aded2bcf51b2c6b7&v=4"
+     alt="Contributer Photo"
+     style="float: left; margin-right: 10px;" />
+
+
+
+
